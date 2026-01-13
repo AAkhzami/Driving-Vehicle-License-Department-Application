@@ -40,6 +40,13 @@ namespace DVLD_Project.Licenses.Detain_License
             if (_LicenseID == -1)
                 return;
 
+            if(!ctrlDriverLicenseInfoWithFilter1.SelectedLicenseInfo.IsActive)
+            {
+                MessageBox.Show("Selected License is not active, choose another one.", "Not allowed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                btnShowLicenseHistory.Enabled = false;
+                btnDetain.Enabled = false;
+                return;
+            }
             if(ctrlDriverLicenseInfoWithFilter1.SelectedLicenseInfo.IsDetained)
             {
                 MessageBox.Show("Selected License is already detained, choose another one.","Not allowed",MessageBoxButtons.OK,MessageBoxIcon.Error);
