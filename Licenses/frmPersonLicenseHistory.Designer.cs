@@ -32,8 +32,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnClose = new System.Windows.Forms.Button();
             this.ctrlDriverLicenses1 = new DVLD_Project.Licenses.Controls.ctrlDriverLicenses();
+            this.btnClose = new System.Windows.Forms.Button();
             this.ctrlPersonCardWithFilter1 = new DVLD_Project.People.Controles.ctrlPersonCardWithFilter();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -83,6 +83,13 @@
             this.panel2.Size = new System.Drawing.Size(981, 936);
             this.panel2.TabIndex = 2;
             // 
+            // ctrlDriverLicenses1
+            // 
+            this.ctrlDriverLicenses1.Location = new System.Drawing.Point(4, 451);
+            this.ctrlDriverLicenses1.Name = "ctrlDriverLicenses1";
+            this.ctrlDriverLicenses1.Size = new System.Drawing.Size(974, 424);
+            this.ctrlDriverLicenses1.TabIndex = 6;
+            // 
             // btnClose
             // 
             this.btnClose.BackColor = System.Drawing.Color.Crimson;
@@ -97,13 +104,6 @@
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // ctrlDriverLicenses1
-            // 
-            this.ctrlDriverLicenses1.Location = new System.Drawing.Point(4, 451);
-            this.ctrlDriverLicenses1.Name = "ctrlDriverLicenses1";
-            this.ctrlDriverLicenses1.Size = new System.Drawing.Size(974, 424);
-            this.ctrlDriverLicenses1.TabIndex = 6;
             // 
             // ctrlPersonCardWithFilter1
             // 
@@ -128,7 +128,7 @@
             this.Name = "frmPersonLicenseHistory";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmPersonLicenseHistory";
+            this.Text = "Person License History";
             this.Load += new System.EventHandler(this.frmPersonLicenseHistory_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
