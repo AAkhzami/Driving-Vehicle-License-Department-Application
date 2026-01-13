@@ -11,8 +11,8 @@ The project follows a professional **3-Tier Architecture** (Data Access Layer, B
 * **Detain/Release:** Tracking detained licenses and managing fine payments.
 
 ## 🖼 System Preview
-![Main Dashboard](./Screenshots/MainDashboard.png)
+![Main Dashboard](./screenshots/MainDashboard.png)
 
-![Person Details](./Screenshots/PersonDetails.png)
+![Person Details](./screenshots/PersonDetails.png)
 
-![Tests Management](./Screenshots/TestsManagement.png)
+![Tests Management](./screenshots/TestsManagement.png)
