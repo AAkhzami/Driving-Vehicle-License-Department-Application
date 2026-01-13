@@ -22,7 +22,7 @@ The project follows a professional **3-Tier Architecture** (Data Access Layer, B
 ![Tests Management](./screenshots/TestsManagement.png)
 *Figure 3: Driving Tests Management Interface*
 
-![Tests Management](./screenshots/Applications.png)
+![Applications](./screenshots/Applications.png)
 *Figure 4: Comprehensive Tracking for Local License Applications.*
 
 ![Add New Person](./Screenshots/AddNewPerson.png)
