@@ -261,7 +261,7 @@ namespace DVLD_Data_Layer
             SqlConnection connection = new SqlConnection(clsDataAccessSettings.connectionString);
             string query = @"UPDATE Licenses
                             SET
-                            IsActive = 0,
+                            IsActive = 0
                             where LicenseID = @LicenseID;";
             SqlCommand command = new SqlCommand(query, connection);
             command.Parameters.AddWithValue("@LicenseID", LicenseID);

@@ -184,8 +184,6 @@ namespace DVLD_Business_Layer
         }
         public bool ReleaseDetainedLicense(int ReleasedByUserID, ref int ApplicationID)
         {
-
-            //First Create Applicaiton 
             clsApplications Application = new clsApplications();
 
             Application.ApplicantPersonID = this.DriverInfo.PersonID;
@@ -209,8 +207,6 @@ namespace DVLD_Business_Layer
         }
         public clsLicense RenewLicense(string Notes, int CreatedByUserID)
         {
-
-            //First Create Applicaiton 
             clsApplications Application = new clsApplications();
 
             Application.ApplicantPersonID = this.DriverInfo.PersonID;

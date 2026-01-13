@@ -116,9 +116,9 @@ namespace DVLD_Business_Layer
         {
             return clsLocalDrivingLicenseApplicationsData.GetAllApplicationsData();
         }
-        public bool Delte()
+        public bool Delete()
         {
-            bool IsLocalDrivingApplicationDeleted = false;
+            bool IsLocalDrivingApplicationDeleted = false; 
             bool IsBaseApplicationDeleted = false;
 
             IsLocalDrivingApplicationDeleted = clsLocalDrivingLicenseApplicationsData.DeleteLocalDrivingLicenseApplication(LocalDrivingLicenseApplicationID);

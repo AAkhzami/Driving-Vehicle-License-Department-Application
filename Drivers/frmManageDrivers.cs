@@ -89,6 +89,8 @@ namespace DVLD_Project.Drivers
         {
             string FilterColumn = "";
 
+            //National No
+            //Full Name
             switch (cbFilterBy.Text)
             {
                 case "Driver ID":
@@ -97,7 +99,7 @@ namespace DVLD_Project.Drivers
                 case "Person ID":
                     FilterColumn = "PersonID";
                     break;
-                case "National No.":
+                case "National No":
                     FilterColumn = "NationalNo";
                     break;
                 case "Full Name":

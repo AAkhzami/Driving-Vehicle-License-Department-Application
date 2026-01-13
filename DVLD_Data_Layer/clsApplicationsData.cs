@@ -140,7 +140,7 @@ namespace DVLD_Data_Layer
         {
             int rowAffected = 0;
             SqlConnection connection = new SqlConnection(clsDataAccessSettings.connectionString);
-            string query = @"DELETE from Applications where ApplicationID = ApplicationID";
+            string query = @"DELETE from Applications where ApplicationID = @ApplicationID";
             SqlCommand command = new SqlCommand(query, connection);
             command.Parameters.AddWithValue("@ApplicationID", ApplicationID);
 
