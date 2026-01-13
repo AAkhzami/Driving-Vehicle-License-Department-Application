@@ -28,10 +28,10 @@ The project follows a professional **3-Tier Architecture** (Data Access Layer, B
 ![Add New Person](./screenshots/AddNewPerson.png)
 *Figure 5: Interface for adding and managing person records with real-time validation.*
 
-![Driver License Applications](./screenshots/DriverLicenseApplications.png)
+![Driver License Applications](./screenshots/DriverLicenseAppliactions.png)
 *Figure 6: Comprehensive list and management of Local Driving License Applications.*
 
-![List Person Details](./screenshots/ListPersonDetails.png)
+![List Person Details](./screenshots/PersonDetails.png)
 *Figure 7: Detailed view of person information utilizing reusable User Controls.*
 
 ---
