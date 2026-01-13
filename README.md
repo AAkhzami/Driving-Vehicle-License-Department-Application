@@ -22,17 +22,14 @@ The project follows a professional **3-Tier Architecture** (Data Access Layer, B
 ![Tests Management](./screenshots/TestsManagement.png)
 *Figure 3: Driving Tests Management Interface*
 
-![Applications](./screenshots/Applications.png)
-*Figure 4: Comprehensive Tracking for Local License Applications.*
-
 ![Add New Person](./screenshots/AddNewPerson.png)
-*Figure 5: Interface for adding and managing person records with real-time validation.*
+*Figure 4: Interface for adding and managing person records with real-time validation.*
 
 ![Driver License Applications](./screenshots/DriverLicenseAppliactions.png)
-*Figure 6: Comprehensive list and management of Local Driving License Applications.*
+*Figure 5: Comprehensive list and management of Local Driving License Applications.*
 
 ![List Person Details](./screenshots/PersonDetails.png)
-*Figure 7: Detailed view of person information utilizing reusable User Controls.*
+*Figure 6: Detailed view of person information utilizing reusable User Controls.*
 
 ---
 
