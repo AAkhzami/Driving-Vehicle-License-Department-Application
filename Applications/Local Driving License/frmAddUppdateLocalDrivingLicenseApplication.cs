@@ -72,6 +72,10 @@ namespace DVLD_Project.Local_Driving_License
         }
         private void _LoadData()
         {
+            btnSave.Text = "Update";
+            lblTitle.Text = "Update Local Driving License Application";
+
+            this.Text = lblTitle.Text;
             ctrlPersonCardWithFilter1.FilterEnabled = false;
             _LocalDrivingLicenseApplication = clsLocalDrivingLicenseApplications.FindByLocalDrivingLicenseApplicationID(_LocalDrivingLicenseApplicationID);
             if(_LocalDrivingLicenseApplication == null)
@@ -86,7 +90,7 @@ namespace DVLD_Project.Local_Driving_License
             lblApplicationDate.Text = _LocalDrivingLicenseApplication.ApplicationDate.ToShortDateString();
             cbLicenseClasses.SelectedIndex = cbLicenseClasses.FindString(clsLicenseClass.Find(_LocalDrivingLicenseApplication.LicenseClassID).ClassName); 
             lblFees.Text = _LocalDrivingLicenseApplication.PaidFees.ToString() + " OMR"; 
-            lblUserName.Text = _LocalDrivingLicenseApplication.CreatedByUserInfo.UserName;
+            lblUserName.Text = clsGlobal.CurrentUser.UserName;
         }
         private void frmNewLocalDrivingLicenseApplication_Load(object sender, EventArgs e)
         {
@@ -133,8 +137,8 @@ namespace DVLD_Project.Local_Driving_License
             int LicenseClassID = clsLicenseClass.Find(cbLicenseClasses.Text).LicenseClassID; 
             
 
-            int ActiveApplicationID = clsApplications.GetActiveApplicationIDForLicenseClass(_LocalDrivingLicenseApplication.ApplicantPersonID,clsApplications.enApplicationType.NewDrivingLicense, LicenseClassID);
-            if(ActiveApplicationID == -1)
+            int ActiveApplicationID = clsApplications.GetActiveApplicationIDForLicenseClass(_LocalDrivingLicenseApplicationID, clsApplications.enApplicationType.NewDrivingLicense, LicenseClassID);
+            if(ActiveApplicationID != -1)
             {
                 MessageBox.Show("Chose another License Class, the selected Person Already have an active application for the selected class\n\"" +
                                  clsLicenseClass.Find(LicenseClassID).ClassName + "\"", "Not allowed", MessageBoxButtons.OK, MessageBoxIcon.Error);

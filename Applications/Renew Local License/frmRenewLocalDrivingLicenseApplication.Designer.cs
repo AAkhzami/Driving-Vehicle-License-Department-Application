@@ -513,6 +513,7 @@
             this.btnShowNewLicenseInfo.TabIndex = 19;
             this.btnShowNewLicenseInfo.Text = "Show New License Info";
             this.btnShowNewLicenseInfo.UseVisualStyleBackColor = false;
+            this.btnShowNewLicenseInfo.Click += new System.EventHandler(this.btnShowNewLicenseInfo_Click);
             // 
             // btnShowLicenseHistory
             // 

@@ -1,6 +1,7 @@
 ﻿using DVLD.Classes;
 using DVLD_Business_Layer;
 using DVLD_Project.Global_Classes;
+using DVLD_Project.Licenses;
 using DVLD_Project.Licenses.Local_Licenses;
 using System;
 using System.Collections.Generic;
@@ -85,7 +86,9 @@ namespace DVLD_Project.Applications.Replacement_for_Lost_or_Damaged_License
 
         private void btnShowLicenseHistory_Click(object sender, EventArgs e)
         {
-            return;
+
+            frmPersonLicenseHistory frm = new frmPersonLicenseHistory(clsLicense.Find(_LicenseID).DriverInfo.PersonID);
+            frm.ShowDialog();
         }
 
         private void btnShowNewLicenseInfo_Click(object sender, EventArgs e)

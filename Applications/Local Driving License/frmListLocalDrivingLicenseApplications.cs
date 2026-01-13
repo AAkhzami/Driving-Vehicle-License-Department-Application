@@ -244,8 +244,9 @@ namespace DVLD_Project.Local_Driving_License
             int LDLApplicationID = (int)dgvLocalDrivingLicenseApplicaions.CurrentRow.Cells[0].Value;
 
             clsLocalDrivingLicenseApplications localDrivingLicenseApplications = clsLocalDrivingLicenseApplications.FindByLocalDrivingLicenseApplicationID(LDLApplicationID);
-            if (localDrivingLicenseApplications == null)
+            if (localDrivingLicenseApplications != null)
             {
+                
                 if (localDrivingLicenseApplications.Delete())
                 {
                     MessageBox.Show("Application Deleted Successfully.", "Deleted", MessageBoxButtons.OK, MessageBoxIcon.Information);
