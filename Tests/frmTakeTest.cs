@@ -47,6 +47,7 @@ namespace DVLD_Project.Tests
                 rbPass.Enabled = false;
                 rbFail.Enabled = false;
 
+                btnSave.Enabled = false;
             }
             else
             {

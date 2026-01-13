@@ -239,7 +239,7 @@ namespace DVLD_Project.Tests.Controles
                 lblRTestAppID.Text = _TestAppointment.RetakeTestApplicationID.ToString();
             }
 
-
+            btnSave.Enabled = false;
             return true;
         }
         private bool _HandleRetakeApplication()
@@ -285,6 +285,7 @@ namespace DVLD_Project.Tests.Controles
             {
                 _Mode = enMode.Update;
                 MessageBox.Show("Data Saved Successfully.", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                btnSave.Enabled = false;
             }
             else
                 MessageBox.Show("Error: Data Is not Saved Successfully.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);

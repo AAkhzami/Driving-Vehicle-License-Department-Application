@@ -129,7 +129,7 @@ namespace DVLD_Project
         {
             string FilterColumn = "";
 
-            switch(cbFilterBy.Text)
+            switch (cbFilterBy.Text)
             {
                 case "Person ID":
                     FilterColumn = "PersonID";
@@ -222,6 +222,18 @@ namespace DVLD_Project
                         MessageBox.Show("Person was not deleted because it has data linked to it.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+
+        private void sendEmailToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("This feature is still not implemented!", "No implemented yet!",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            return;
+        }
+
+        private void phoneCallToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("This feature is still not implemented!", "No implemented yet!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            return;
         }
     }
 }
